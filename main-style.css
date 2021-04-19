@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hanalei&family=PT+Sans&family=Roboto&display=swap");
-
-@font-face { 
-    src : url(/fonts/Roboto/Roboto-Regular.ttf) ; 
-    font-family : Roboto ; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto+Mono&family=Rubik&family=Ubuntu+Mono&display=swap');
 
 * { 
     margin : 0 ;
     padding : 0 ; 
     box-sizing : border-box ; 
-    font-family :   "Roboto" , 'sans serif' , 'arial narrow' ;  
+    font-family :   "Roboto Mono" , 'Montserrat' , 'Rubik' , 'Ubuntu Mono' , 'sans serif' , 'arial narrow' ;  
 }
 
 html { 
@@ -32,11 +27,13 @@ body {
     text-align: center ; 
     letter-spacing: .5px ; 
     font-size : 3rem ;
-    color : black ; text-shadow : 0 0 1px black , 0 0 3px white , 0 0 5px black  ; 
-    animation-name : shakeHeader ;
+    color : black ; 
+    font-weight : 600 ; 
+    /* text-shadow : 0 0 1px black , 0 0 3px white , 0 0 5px black  ;  */
+   /*  animation-name : shakeHeader ;
     animation-duration : 5s ; 
     animation-timing-function : linear ;
-    animation-iteration-count : infinite ;  
+    animation-iteration-count : infinite ;   */
 }
 
 #todo-holder { 
