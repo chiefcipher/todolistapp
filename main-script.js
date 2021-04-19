@@ -91,9 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelectorAll(".list-row").length == 0) {
     document.querySelector("#list-container").style.animationName =
       "leftRightContainer";
-    console.log("there is no list");
-  } else {
-    console.log("there is alist buddy ");
   }
 
   displayClearAll();

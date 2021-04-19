@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Roboto+Mono&family=Rubik&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap');
 
 * { 
     margin : 0 ;
     padding : 0 ; 
     box-sizing : border-box ; 
-    font-family :   "Roboto Mono" , 'Montserrat' , 'Rubik' , 'Ubuntu Mono' , 'sans serif' , 'arial narrow' ;  
+    font-family :    'Rubik' , 'Montserrat' ,'sans serif' , 'arial narrow' ;  
 }
 
 html { 
@@ -25,10 +25,11 @@ body {
 
 #header { 
     text-align: center ; 
-    letter-spacing: .5px ; 
-    font-size : 3rem ;
-    color : black ; 
+    letter-spacing: -.5px ; 
+    font-size : 3.2rem ;
+    color : hsl(0,0%,10%) ; 
     font-weight : 600 ; 
+    padding : .5rem 0 ; 
     /* text-shadow : 0 0 1px black , 0 0 3px white , 0 0 5px black  ;  */
    /*  animation-name : shakeHeader ;
     animation-duration : 5s ; 
@@ -45,10 +46,10 @@ body {
 #list-container { 
     background :   hsl(348, 95%, 100%) ;   
     color : #000 ;   
-    border-radius: 7px ;
-    box-shadow : 0 0 10px 5px rgba(0,0,0,0.5) ; 
-    width : 420px ; 
-    padding : 10px   ; 
+    border-radius: .7rem ;
+    box-shadow : 0 0 1rem .5rem rgba(0,0,0,0.5) ; 
+    width : 42rem ; 
+    padding : 1rem   ; 
     animation-name  : rotateContainer ; 
     animation-duration : 1s ; 
     animation-timing-function:  linear   ; 
@@ -56,10 +57,10 @@ body {
     }
 
 #list-holder { 
-    margin-top : 10px ;
-    padding-right : 5px ;
-    min-height : 200px ; 
-    max-height : 350px ; 
+    margin-top : 1rem ;
+    padding-right : .5rem ;
+    min-height : 20rem ; 
+    max-height : 35rem ; 
     overflow-x : hidden ; 
     overflow-y: scroll;
 
@@ -67,13 +68,13 @@ body {
 
 #list-holder::-webkit-scrollbar {   
     background :   hsla(19, 100%, 80%, 1) ; 
-    border-radius: 10px ; 
-    width : 15px ; 
+    border-radius: 1rem ; 
+    width : 1.5rem ; 
 }
 
 #list-holder::-webkit-scrollbar-thumb { 
     background : rgba(255, 116, 51, 0.9)  ;  
-    border-radius : 10px ;
+    border-radius : 1rem ;
 }
 
 #list-holder::-webkit-scrollbar-track { 
@@ -85,41 +86,41 @@ body {
     flex-direction: row ;
     align-items : center ; 
     justify-content: space-between  ; 
-    margin : 5px 0 ; 
+    margin : .5rem 0 ; 
 }
 #add-row input { 
     flex : 1 ;
     background :  hsla(0, 2%, 83%,.5) ;
-     margin-right : 5px ; 
-    font-weight : 600px ; font-size : 1.8rem ;
-    height : 30px ; 
-    padding: 7px 2px  ;
+     margin-right : .5rem ; 
+    font-weight : 60rem ; font-size : 1.8rem ;
+    height : 3rem ; 
+    padding: .7rem .2rem  ;
     outline  : none ;     border : none ;
     border-bottom : 2px solid  #970421 ;  
 }
 
 
 #add-row img  {
-    width : 30px ; 
+    width : 3rem ; 
 }
 
 .control-btns { 
-    width : 30px ; 
+    width : 3rem ; 
     cursor : pointer ;
 }
 .list-row { 
     display : flex ; 
     justify-content: space-between ; 
     align-items: center ;
-    border-radius : 3px ;  
-    padding : 5px 0 ;    
-    margin : 5px 0 ; 
+    border-radius : .3rem ;  
+    padding : .5rem 0 ;    
+    margin : .5rem 0 ; 
     background : hsla(0, 0%, 90%,.8) ;
     border-bottom : 2px solid rgba(255, 116, 51, 0.9) ; 
 }
 
 .content {
-     padding-left: 5px ;
+     padding-left: .5rem ;
      text-align : left ;  
      letter-spacing : -0.05em ; 
     }
@@ -142,30 +143,30 @@ body {
 @keyframes leftRightContainer { 
     0% { 
         opacity : 0 ; 
-        transform: translateX(-20px );
+        transform: translateX(-2rem );
     }
     100% { 
         opacity : 1 ; 
-        transform : translateX(20px) ; 
+        transform : translateX(2rem) ; 
     }
 }
 #list-status { 
     display : flex ; flex-direction: row ;
     justify-content: space-between ; 
-    padding-right : 20px ; 
+    padding-right : 2rem; 
     font-size : 1.6rem ; 
     align-items: baseline ; 
-    margin-top : 10px ; 
+    margin-top : 1rem ; 
 
 }
 
 #clear-all button {
     background : white ; /*hsl(206, 75%, 80%) */ 
-    padding : 8px 15px  ; 
-    font-family: 'Roboto' , 'sans serif'; 
+    padding : .8rem 1.5rem  ; 
+    font-family: 'Rubik' , 'sans serif'; 
     font-weight : 500 ; 
     outline : none ; border : none  ; 
-    border-radius : 3px ; 
+    border-radius : .3rem ; 
     letter-spacing : -0.01em ; 
     color :  white ; background :rgb(247, 14, 14) ; 
     font-size : inherit ; 
@@ -187,8 +188,8 @@ body {
      }
 
 #confirm {  
-    width : 400px ; 
-    padding : 50px 25px  ;
+    width : 40rem ; 
+    padding : 5rem 2.5rem  ;
     text-align : center ; 
     border-radius : 5px ; 
     background: #fff ;  
@@ -196,10 +197,10 @@ body {
 }
 
 .confirmation-btn {     
-    padding : 15px 20px ;  
+    padding : 1.5rem 2rem ;  
     outline : none ; border : none ;  
-    font-weight : 600 ; margin-top : 10px ;  
-    border-radius : 5px ; 
+    font-weight : 600 ; margin-top : 1rem ;  
+    border-radius : .5rem ; 
     color : white ; 
     letter-spacing: 0.05em ; 
 }
@@ -218,12 +219,12 @@ body {
 
 #footer { 
     width  : 100vw ;
-    padding  : 15px 20px ;  
+    padding  : 1.5rem 2rem ;  
     background :  hsl(348, 95%, 35%)  ;  
     color  : #fff ;  
     text-align : center ;  
     font-size : 1.6rem; 
-    margin-top : 60px ; 
+    margin-top : 6rem ;  
 } 
 
 .profile-links:link, .profile-links:visited { 
@@ -240,64 +241,67 @@ body {
     }
 
     #list-container { 
-        width  : 300px ; 
+        width  : 30rem ; 
     }
-    #add-row img , .control-btns { 
+    /* #add-row img , .control-btns { 
         width : 25px 
-    }
+    } */
     
     #list-holder::-webkit-scrollbar {   
-        border-radius: 10px ; 
-        width : 10px ; 
+        border-radius: 1rem ; 
+        width : 1rem ; 
     }
     
     #list-holder::-webkit-scrollbar-thumb { 
-        border-radius : 8px ;
+        border-radius : .8rem ;
     }
     
     #confirm { 
-        width : 300px ;  
-        padding : 30px 20px ; 
+        width  : 30rem  ;  
+        padding : 3rem 2rem ; 
     }   
 
     .confirmation-btn {
-         padding : 10px 15px ; 
+         padding : 1rem 1.5rem  ; 
     }
 } 
 
 
 @media (max-width: 350px ) { 
     html { 
-        font-size : 7px ; 
+        font-size : 6px ; 
     }
 
     #add-row input { 
         width : 80% ; 
-         height : 16px ; 
+         height : 1.6rem ; 
     }
     #list-container { 
         width  : 75vw ; 
     }
     #add-row img , .control-btns { 
-        width : 15px 
+        width : 1.8rem 
     }
     
     #list-holder::-webkit-scrollbar {   
-        border-radius: 7px ; 
-        width : 7px ; 
+        border-radius: 1rem ; 
+        width : 1rem ; 
     }
     
     #list-holder::-webkit-scrollbar-thumb { 
-        border-radius : 7px ;
+        border-radius : 1rem ;
     }
     
     #confirm { 
         width : 60vw;  
-        padding : 15px 10px ; 
+        padding : 1.5rem 1rem ; 
+        font-size : 1.5rem ; 
     }   
 
     .confirmation-btn {
-         padding : 5px 10px ; 
+         padding : .5rem 1rem ; 
+        font-size : 1.5rem ; 
+
     }
     #clear-all button span:nth-child(1){ 
         display : none ;
