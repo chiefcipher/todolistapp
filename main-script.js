@@ -37,8 +37,8 @@ function displayList() {
     document.querySelector("#list-holder").innerHTML = "";
     for (let i = 0; i < listArray.length; i++) {
       let newRow = `<div class='list-row' > <div class='content'>  ${listArray[i]}  </div> <div class='controls'> 
-      <img tabindex=0 src='svg/edit.svg' alt='Delete' class='control-btns edit-btn'/>
-      <img tabindex=0 src='svg/004-delete.svg' alt='Delete' class='control-btns delete-btn'/> 
+      <img tabindex=0 src='svg/edit.svg' title='Edit' alt='Delete' class='control-btns edit-btn'/>
+      <img tabindex=0 src='svg/004-delete.svg' title='Delete' alt='Delete' class='control-btns delete-btn'/> 
       </div> </div>`;
       document.querySelector("#list-holder").innerHTML += newRow;
     }

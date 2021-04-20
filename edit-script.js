@@ -44,7 +44,6 @@ function activateEditEventListeners() {
     confirmBtn.onclick =  ()=> {     
         listArray[arrayIndex] = editInputTag.value ;
         editModal.style.display = 'none' ;
-        console.log(listArray)
         displayList() ;
     }
 
