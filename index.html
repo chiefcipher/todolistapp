@@ -6,26 +6,30 @@
     <meta name='author' content = 'Samuel Ohiani Yakubu' /> 
     <meta name='keyword' content = "Todo , List , App " /> 
     <link rel='stylesheet' type='text/css' href='main-style.css' /> 
+    <link rel='stylesheet' type='text/css' href='edit-list.css' /> 
     <link rel='shortcut icon' type='image/x-icon' href='svg/note.svg' /> 
     <script src='main-script.js' defer > </script> 
+    <script src='edit-script.js' defer></script> 
     <title>TO-DO LIST APP </title>
 </head>
 <body>
     <section id='todo-holder' >
         <div id='list-container'>  
             <div id='header'>To-Do List  </div> 
-            <div id='add-row' >  <input type='text' id='input-area' title='Click to add task' placeholder="Add Task..." />  <img src='svg/002-plus.svg' alt='Add Btn' tabindex='0' id='add-btn' class='pointer-cursor' /> </div>  
+            <div id='add-row' >  <input type='text' id='input-area' title='Click to add task' placeholder="Add Task..." /> 
+                <img src='svg/002-plus.svg' alt='Add Btn' tabindex='0' id='add-btn' class='pointer-cursor' /> 
+            </div>  
             <div id='list-holder' >
  
             </div>
 
             <div id='list-status' >  
-                
                 <div id='number-left'> <span> </span> Task(s) Added </div>
                 <div id='clear-all' tabindex="0"> <button class ='pointer-cursor' > Clear <span>List</span> </button> </div>
             </div> 
         </div>
     </section>  
+    
     <section id='confirmation-box' >   
         <div id='confirm' > 
 
@@ -34,6 +38,17 @@
             <button class='confirmation-btn delete'> Delete </button>   </div>
         </div>
         </section> 
+        <section id="edit-list">
+            <div id="edit-box">
+
+                <input type='text' id='edit-area' placeholder="Edit Tasks.." title='Click to edit task'/> 
+
+                <br> 
+                <button  class='edit-btns edit-reverse'> Reverse </button> 
+                <button  class='edit-btns edit-entry'> Confirm </button>
+
+            </div>
+        </section>
 
         <section id='footer' > 
             Built By Samuel Yakubu  <br>    

@@ -36,16 +36,24 @@ function displayList() {
   } else {
     document.querySelector("#list-holder").innerHTML = "";
     for (let i = 0; i < listArray.length; i++) {
-      let newRow = `<div class='list-row' > <div class='content'>  ${listArray[i]}  </div> <div class='controls'> <img tabindex=0 src='svg/004-delete.svg' alt='Delete' class='control-btns delete-btn'/> </div> </div>`;
+      let newRow = `<div class='list-row' > <div class='content'>  ${listArray[i]}  </div> <div class='controls'> 
+      <img tabindex=0 src='svg/edit.svg' alt='Delete' class='control-btns edit-btn'/>
+      <img tabindex=0 src='svg/004-delete.svg' alt='Delete' class='control-btns delete-btn'/> 
+      </div> </div>`;
       document.querySelector("#list-holder").innerHTML += newRow;
     }
   }
 
   activateDelEventListeners();
+  activateEditEventListeners() ; 
+
   storeLocalStorage(listArray);
   displayClearAll(); 
   scrollToBottom() ; 
 }
+
+
+
 
 function addEnterKeyToDelBtn() {
   let delBtns = document.querySelectorAll(".delete-btn");
@@ -60,8 +68,9 @@ function addEnterKeyToDelBtn() {
   }
 }
 
+
 function activateDelEventListeners() {
-  delBtns = document.querySelectorAll(".delete-btn");
+  let delBtns = document.querySelectorAll(".delete-btn");
   for (let i = 0; i < delBtns.length; i++) {
     delBtns[i].addEventListener("click", () => {
       deleteArrayElement(i);

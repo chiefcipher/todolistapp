@@ -90,7 +90,7 @@ body {
 }
 #add-row input { 
     flex : 1 ;
-    background :  hsla(0, 2%, 83%,.5) ;
+    background :  hsla(0, 2%, 83%,.75) ;
      margin-right : .5rem ; 
     font-weight : 60rem ; font-size : 1.8rem ;
     height : 3rem ; 
@@ -241,7 +241,7 @@ body {
     }
 
     #list-container { 
-        width  : 30rem ; 
+        width  : 39rem ; 
     }
     /* #add-row img , .control-btns { 
         width : 25px 
@@ -267,9 +267,9 @@ body {
 } 
 
 
-@media (max-width: 350px ) { 
+@media (max-width: 390px ) { 
     html { 
-        font-size : 6px ; 
+        font-size : 7px ; 
     }
 
     #add-row input { 
@@ -277,7 +277,7 @@ body {
          height : 1.6rem ; 
     }
     #list-container { 
-        width  : 75vw ; 
+        width  : 80vw ; 
     }
     #add-row img , .control-btns { 
         width : 1.8rem 
